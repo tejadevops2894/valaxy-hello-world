@@ -25,8 +25,13 @@
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
+      <url>http://192.168.56.101:8081/artifactory/libs-release-local</url>
     </site>
+           <snapshotRepository>
+			<id>snapshot</id>
+			<name>snapshots</name>
+			<url>http://192.168.56.101:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
   </distributionManagement>
 
   <build>
